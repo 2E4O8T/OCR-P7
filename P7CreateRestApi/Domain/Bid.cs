@@ -2,26 +2,28 @@ using System.ComponentModel.DataAnnotations;
 
 namespace P7CreateRestApi.Domain
 {
-    public class Trade
+    public class Bid
     {
-        public int TradeId { get; set; }
+        public int BidId { get; set; }
         [Required(ErrorMessage = "Account is required.")]
         public string Account { get; set; }
-        [Required(ErrorMessage = "Account Type is required.")]
-        public string AccountType { get; set; }
-        public double? BuyQuantity { get; set; }
-        public double? SellQuantity { get; set; }
-        public double? BuyPrice { get; set; }
-        public double? SellPrice { get; set; }
-        public DateTime? TradeDate { get; set; }
-        [Required(ErrorMessage = "Trade Security is required.")]
-        public string TradeSecurity { get; set; }
-        [Required(ErrorMessage = "Trade Status is required.")]
-        public string TradeStatus { get; set; }
-        [Required(ErrorMessage = "Trader is required.")]
-        public string Trader { get; set; }
+        [Required(ErrorMessage = "Bid Type is required.")]
+        public string BidType { get; set; }
+        public double? BidQuantity { get; set; }
+        public double? AskQuantity { get; set; }
+        public double? BidAmount { get; set; }
+        public double? AskAmount { get; set; }
         [Required(ErrorMessage = "Benchmark is required.")]
         public string Benchmark { get; set; }
+        public DateTime? BidListDate { get; set; }
+        [Required(ErrorMessage = "Commentary is required.")]
+        public string Commentary { get; set; }
+        [Required(ErrorMessage = "Bid Security is required.")]
+        public string BidSecurity { get; set; }
+        [Required(ErrorMessage = "Bid Status is required.")]
+        public string BidStatus { get; set; }
+        [Required(ErrorMessage = "Trader is required.")]
+        public string Trader { get; set; }
         [Required(ErrorMessage = "Book is required.")]
         public string Book { get; set; }
         [Required(ErrorMessage = "Creation Name is required.")]
@@ -39,4 +41,5 @@ namespace P7CreateRestApi.Domain
         [Required(ErrorMessage = "Side is required.")]
         public string Side { get; set; }
     }
+    
 }
