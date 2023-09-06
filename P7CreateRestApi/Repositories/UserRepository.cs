@@ -6,9 +6,9 @@ namespace Dot.Net.WebApi.Repositories
 {
     public class UserRepository
     {
-        public LocalDbContext DbContext { get; }
+        public PostTradesDbContext DbContext { get; }
 
-        public UserRepository(LocalDbContext dbContext)
+        public UserRepository(PostTradesDbContext dbContext)
         {
             DbContext = dbContext;
         }
