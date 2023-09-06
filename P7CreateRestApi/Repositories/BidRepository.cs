@@ -13,6 +13,10 @@ namespace P7CreateRestApi.Repositories
             _context = context;
         }
 
+        public async Task<IEnumerable<Bid>> GetAllBids()
+        {
+            return await _context.Bids.ToListAsync();
+        }
         public async Task<Bid> GetBidByIdAsync(int id)
         {
             return await _context.Bids.FindAsync(id);
