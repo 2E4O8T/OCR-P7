@@ -8,66 +8,6 @@ namespace P7CreateRestApiTests
 {
     public class BidUnitControllerTests
     {
-        //[Fact]
-        //public async Task GetBids_ReturnsOkResult_WhenBidsExist()
-        //{
-        //    // Arrange
-        //    var mockRepository = new Mock<IBidRepository>();
-        //    var controller = new BidsController(mockRepository.Object);
-
-        //    var fakeBids = new List<Bid>
-        //    {
-        //    new Bid { BidId = 1, /* other properties */ },
-        //    new Bid { BidId = 2, /* other properties */ },
-        //};
-
-        //    mockRepository.Setup(repo => repo.GetAllBids()).ReturnsAsync(fakeBids);
-
-        //    // Act
-        //    var result = await controller.GetBids();
-
-        //    // Assert
-        //    var okResult = Assert.IsType<OkObjectResult>(result.Result);
-        //    var bids = Assert.IsAssignableFrom<IEnumerable<Bid>>(okResult.Value);
-        //    Assert.Equal(2, bids.Count());
-        //}
-
-        //[Fact]
-        //public async Task GetBid_ReturnsOkResult_WhenBidExists()
-        //{
-        //    // Arrange
-        //    var mockRepository = new Mock<IBidRepository>();
-        //    var controller = new BidsController(mockRepository.Object);
-
-        //    var fakeBid = new Bid { BidId = 1, /* other properties */ };
-
-        //    mockRepository.Setup(repo => repo.GetBidByIdAsync(1)).ReturnsAsync(fakeBid);
-
-        //    // Act
-        //    var result = await controller.GetBid(1);
-
-        //    // Assert
-        //    var okResult = Assert.IsType<OkObjectResult>(result.Result);
-        //    var bid = Assert.IsAssignableFrom<Bid>(okResult.Value);
-        //    Assert.Equal(1, bid.BidId);
-        //}
-
-        //[Fact]
-        //public async Task GetBid_ReturnsNotFound_WhenBidDoesNotExist()
-        //{
-        //    // Arrange
-        //    var mockRepository = new Mock<IBidRepository>();
-        //    var controller = new BidsController(mockRepository.Object);
-
-        //    mockRepository.Setup(repo => repo.GetBidByIdAsync(1)).ReturnsAsync((Bid)null);
-
-        //    // Act
-        //    var result = await controller.GetBid(1);
-
-        //    // Assert
-        //    Assert.IsType<NotFoundResult>(result.Result);
-        //}
-
         [Fact]
         public async Task GetBids_ReturnsOkResult_WhenBidsExist()
         {

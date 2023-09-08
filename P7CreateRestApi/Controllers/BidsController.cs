@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using P7CreateRestApi.Data;
+﻿using Microsoft.AspNetCore.Mvc;
 using P7CreateRestApi.Domain;
 using P7CreateRestApi.Repositories;
 
