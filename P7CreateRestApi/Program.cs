@@ -3,10 +3,12 @@ using P7CreateRestApi.Data;
 using P7CreateRestApi.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+
 ConfigurationManager configuration = builder.Configuration;
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
 builder.Services.AddDbContext<PostTradesDbContext>(options =>
     options.UseSqlServer(connectionString));
 // Service Interfaces
