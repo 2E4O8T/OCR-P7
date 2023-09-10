@@ -35,7 +35,8 @@ namespace P7CreateRestApi.Controllers
             }
             if (await _usersService.Login(user))
             {
-                return Ok("Done");
+                var tokenString = _usersService.GenerateTokenString(user);
+                return Ok(tokenString);
             }
             return BadRequest();
         }
