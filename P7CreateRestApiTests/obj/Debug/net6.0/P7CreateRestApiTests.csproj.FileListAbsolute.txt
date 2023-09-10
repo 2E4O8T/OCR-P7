@@ -364,3 +364,8 @@ C:\Repos\OCR\P7\P7CreateRestApiTests\obj\Debug\net6.0\refint\P7CreateRestApiTest
 C:\Repos\OCR\P7\P7CreateRestApiTests\obj\Debug\net6.0\P7CreateRestApiTests.pdb
 C:\Repos\OCR\P7\P7CreateRestApiTests\obj\Debug\net6.0\P7CreateRestApiTests.genruntimeconfig.cache
 C:\Repos\OCR\P7\P7CreateRestApiTests\obj\Debug\net6.0\ref\P7CreateRestApiTests.dll
+C:\Repos\OCR\P7\P7CreateRestApiTests\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Repos\OCR\P7\P7CreateRestApiTests\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Repos\OCR\P7\P7CreateRestApiTests\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Repos\OCR\P7\P7CreateRestApiTests\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Repos\OCR\P7\P7CreateRestApiTests\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

@@ -4,7 +4,7 @@ using P7CreateRestApi.Domain;
 
 namespace P7CreateRestApi.Repositories
 {
-    public class CurvePointRepository
+    public class CurvePointRepository : ICurvePointRepository
     {
         private readonly PostTradesDbContext _context;
 

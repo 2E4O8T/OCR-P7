@@ -4,7 +4,7 @@ using P7CreateRestApi.Domain;
 
 namespace P7CreateRestApi.Repositories
 {
-    public class RatingRepository
+    public class RatingRepository : IRatingRepository
     {
         private readonly PostTradesDbContext _context;
 
