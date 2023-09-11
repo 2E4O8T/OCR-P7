@@ -25,7 +25,7 @@ namespace P7CreateRestApi.Controllers
             }
             return BadRequest("Something went wrong");
         }
-        
+
         [HttpPost("Login")]
         public async Task<IActionResult> Login(LoginUser user)
         {

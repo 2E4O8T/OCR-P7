@@ -47,6 +47,36 @@ namespace P7CreateRestApi.Migrations.UsersDb
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1fc9b10e-e126-4f5e-ae32-d61d872e75bb",
+                            ConcurrencyStamp = "1",
+                            Name = "Admin",
+                            NormalizedName = "Administrator"
+                        },
+                        new
+                        {
+                            Id = "4c983ac4-4b0f-4e0c-91ba-eff89bd40b59",
+                            ConcurrencyStamp = "2",
+                            Name = "Create",
+                            NormalizedName = "Creator"
+                        },
+                        new
+                        {
+                            Id = "b5e717be-889d-4757-b355-6dc6392c8eec",
+                            ConcurrencyStamp = "3",
+                            Name = "Update",
+                            NormalizedName = "Updator"
+                        },
+                        new
+                        {
+                            Id = "9bdca621-2043-4631-b6f6-61edf5329f02",
+                            ConcurrencyStamp = "4",
+                            Name = "User",
+                            NormalizedName = "SimpleUser"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -218,35 +248,6 @@ namespace P7CreateRestApi.Migrations.UsersDb
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("P7CreateRestApi.Domain.User", b =>
-                {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
-
-                    b.Property<string>("Fullname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("UserId");
-
-                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -44,7 +44,7 @@ namespace P7CreateRestApi.Services
         public string GenerateTokenString(LoginUser user)
         {
             IEnumerable<Claim> claims = new List<Claim>
-            { 
+            {
                 new Claim(ClaimTypes.Email, user.UserName),
                 new Claim(ClaimTypes.Role, "Admin")
 
@@ -54,7 +54,7 @@ namespace P7CreateRestApi.Services
                 Encoding.UTF8.GetBytes(_configuration.GetSection("Jwt:Key").Value));
 
             SigningCredentials signingCredentials = new SigningCredentials(
-                securityKey,SecurityAlgorithms.HmacSha256Signature);
+                securityKey, SecurityAlgorithms.HmacSha256Signature);
 
             var securityToken = new JwtSecurityToken(
                 claims: claims,
