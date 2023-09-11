@@ -1,0 +1,31 @@
+2023-09-11 18:17:03.046 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7210/api/UsersTests/Administrator - 0
+2023-09-11 18:17:03.062 +02:00 [DBG] 1 candidate(s) found for the request path '/api/UsersTests/Administrator'
+2023-09-11 18:17:03.062 +02:00 [DBG] Endpoint 'P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi)' with route pattern 'api/UsersTests/Administrator' is valid for the request path '/api/UsersTests/Administrator'
+2023-09-11 18:17:03.062 +02:00 [DBG] Request matched endpoint 'P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi)'
+2023-09-11 18:17:03.062 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-09-11 18:17:03.114 +02:00 [DBG] Successfully validated the token.
+2023-09-11 18:17:03.115 +02:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-09-11 18:17:03.116 +02:00 [DBG] Authorization was successful.
+2023-09-11 18:17:03.116 +02:00 [INF] Executing endpoint 'P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi)'
+2023-09-11 18:17:03.117 +02:00 [INF] Route matched with {action = "GetAdmin", controller = "UsersTests"}. Executing controller action with signature System.String GetAdmin() on controller P7CreateRestApi.Controllers.UsersTestsController (P7CreateRestApi).
+2023-09-11 18:17:03.117 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-09-11 18:17:03.117 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-09-11 18:17:03.117 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-09-11 18:17:03.117 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-09-11 18:17:03.117 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-09-11 18:17:03.117 +02:00 [DBG] Executing controller factory for controller P7CreateRestApi.Controllers.UsersTestsController (P7CreateRestApi)
+2023-09-11 18:17:03.117 +02:00 [DBG] Executed controller factory for controller P7CreateRestApi.Controllers.UsersTestsController (P7CreateRestApi)
+2023-09-11 18:17:03.128 +02:00 [INF] Executing action method P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi) - Validation state: "Valid"
+2023-09-11 18:17:03.129 +02:00 [INF] Executed action method P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.1211ms.
+2023-09-11 18:17:03.129 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-09-11 18:17:03.129 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-09-11 18:17:03.129 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-09-11 18:17:03.129 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-09-11 18:17:03.129 +02:00 [INF] Executed action P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi) in 11.7948ms
+2023-09-11 18:17:03.129 +02:00 [INF] Executed endpoint 'P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi)'
+2023-09-11 18:17:03.129 +02:00 [INF] HTTP POST /api/UsersTests/Administrator responded 200 in 66.6798 ms
+2023-09-11 18:17:03.129 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7210/api/UsersTests/Administrator - 0 - 200 - text/plain;+charset=utf-8 83.3423ms
+2023-09-11 18:17:16.512 +02:00 [DBG] Connection id "0HMTIS9DPOL37" received FIN.
+2023-09-11 18:17:16.512 +02:00 [DBG] Connection id "0HMTIS9DPOL37" is closed. The last processed stream ID was 15.
+2023-09-11 18:17:16.512 +02:00 [DBG] Connection id "0HMTIS9DPOL37" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-11 18:17:16.516 +02:00 [DBG] Connection id "0HMTIS9DPOL37" stopped.

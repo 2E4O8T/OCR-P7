@@ -7,8 +7,41 @@ using P7CreateRestApi.Repositories;
 using P7CreateRestApi.Services;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using Serilog;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add Logging
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.File("Log/log.txt", rollingInterval: RollingInterval.Minute, outputTemplate: "{Timestamp:G} {Message}{NewLine:1}{Exception:1}")
+    .Enrich.WithThreadId()
+    .Enrich.WithMachineName()
+    .Enrich.WithProcessId()
+    .CreateLogger();
+Log.Information("Application Starting Up");
+
+builder.Host.UseSerilog();
+
+//try
+//{
+//    var configSerilog = new ConfigurationBuilder()
+//        .AddJsonFile("appsettings.json")
+//        .Build();
+//    Log.Logger = new LoggerConfiguration()
+//        .ReadFrom.Configuration(configSerilog)
+//        .CreateLogger();
+
+//    Log.Information("Application Starting Up");
+
+//    builder.Host.UseSerilog();
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine($"Error configuring Sreilog: {ex}");
+//    throw;
+//}
 
 ConfigurationManager configuration = builder.Configuration;
 
@@ -122,6 +155,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseSerilogRequestLogging();
 
 app.UseAuthentication();
 app.UseAuthorization();

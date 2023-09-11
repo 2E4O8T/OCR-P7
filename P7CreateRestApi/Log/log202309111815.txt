@@ -1,0 +1,95 @@
+2023-09-11 18:15:40.033 +02:00 [DBG] Connection id "0HMTIS52QBNAF" received FIN.
+2023-09-11 18:15:40.055 +02:00 [DBG] Connection id "0HMTIS52QBNAF" is closed. The last processed stream ID was 7.
+2023-09-11 18:15:40.056 +02:00 [DBG] Connection id "0HMTIS52QBNAF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-11 18:15:40.058 +02:00 [DBG] Connection id "0HMTIS52QBNAF" stopped.
+2023-09-11 18:15:45.902 +02:00 [INF] Application Starting Up
+2023-09-11 18:15:46.388 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-11 18:15:46.457 +02:00 [DBG] Hosting starting
+2023-09-11 18:15:46.505 +02:00 [INF] User profile is available. Using 'C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-11 18:15:46.509 +02:00 [DBG] Reading data from file 'C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-6e968384-c5a7-4c50-adeb-b9b6866c1a4b.xml'.
+2023-09-11 18:15:46.514 +02:00 [DBG] Reading data from file 'C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-76dc9154-53ef-4231-8ce5-898bf4c9bd2f.xml'.
+2023-09-11 18:15:46.516 +02:00 [DBG] Reading data from file 'C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-8737ec51-afad-4c76-b60c-2366aabdc414.xml'.
+2023-09-11 18:15:46.525 +02:00 [DBG] Found key {6e968384-c5a7-4c50-adeb-b9b6866c1a4b}.
+2023-09-11 18:15:46.528 +02:00 [DBG] Found key {76dc9154-53ef-4231-8ce5-898bf4c9bd2f}.
+2023-09-11 18:15:46.529 +02:00 [DBG] Found key {8737ec51-afad-4c76-b60c-2366aabdc414}.
+2023-09-11 18:15:46.538 +02:00 [DBG] Considering key {6e968384-c5a7-4c50-adeb-b9b6866c1a4b} with expiration date 2023-10-02 15:25:19Z as default key.
+2023-09-11 18:15:46.541 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-09-11 18:15:46.544 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2023-09-11 18:15:46.545 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-09-11 18:15:46.550 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-09-11 18:15:46.552 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-09-11 18:15:46.554 +02:00 [DBG] Using key {6e968384-c5a7-4c50-adeb-b9b6866c1a4b} as the default key.
+2023-09-11 18:15:46.555 +02:00 [DBG] Key ring with default key {6e968384-c5a7-4c50-adeb-b9b6866c1a4b} was loaded during application startup.
+2023-09-11 18:15:46.721 +02:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 17434C692F7E70CD32C9D3B60C423EA7F1AB4EB2)
+2023-09-11 18:15:46.760 +02:00 [INF] Now listening on: https://localhost:7210
+2023-09-11 18:15:46.760 +02:00 [INF] Now listening on: http://localhost:5267
+2023-09-11 18:15:46.760 +02:00 [DBG] Loaded hosting startup assembly P7CreateRestApi
+2023-09-11 18:15:46.760 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-11 18:15:46.760 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-11 18:15:46.760 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-11 18:15:46.760 +02:00 [INF] Hosting environment: Development
+2023-09-11 18:15:46.760 +02:00 [INF] Content root path: C:\Repos\OCR\P7\P7CreateRestApi\
+2023-09-11 18:15:46.760 +02:00 [DBG] Hosting started
+2023-09-11 18:15:47.240 +02:00 [DBG] Connection id "0HMTIS9DPOL35" accepted.
+2023-09-11 18:15:47.241 +02:00 [DBG] Connection id "0HMTIS9DPOL35" started.
+2023-09-11 18:15:47.246 +02:00 [DBG] Connection id "0HMTIS9DPOL36" received FIN.
+2023-09-11 18:15:47.247 +02:00 [DBG] Connection id "0HMTIS9DPOL36" accepted.
+2023-09-11 18:15:47.247 +02:00 [DBG] Connection id "0HMTIS9DPOL36" started.
+2023-09-11 18:15:47.248 +02:00 [DBG] Connection id "0HMTIS9DPOL35" received FIN.
+2023-09-11 18:15:47.252 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-11 18:15:47.252 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-11 18:15:47.283 +02:00 [DBG] Connection id "0HMTIS9DPOL35" stopped.
+2023-09-11 18:15:47.283 +02:00 [DBG] Connection id "0HMTIS9DPOL36" stopped.
+2023-09-11 18:15:47.291 +02:00 [DBG] Connection id "0HMTIS9DPOL36" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-11 18:15:47.291 +02:00 [DBG] Connection id "0HMTIS9DPOL35" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-11 18:15:47.618 +02:00 [DBG] Connection id "0HMTIS9DPOL37" accepted.
+2023-09-11 18:15:47.619 +02:00 [DBG] Connection id "0HMTIS9DPOL37" started.
+2023-09-11 18:15:47.669 +02:00 [DBG] Connection 0HMTIS9DPOL37 established using the following protocol: "Tls12"
+2023-09-11 18:15:47.707 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/index.html - -
+2023-09-11 18:15:47.735 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-11 18:15:47.755 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-09-11 18:15:47.755 +02:00 [DBG] Request did not match any endpoints
+2023-09-11 18:15:47.923 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-11 18:15:48.035 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-11 18:15:48.039 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/index.html - - - 200 - text/html;charset=utf-8 334.3517ms
+2023-09-11 18:15:48.053 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - -
+2023-09-11 18:15:48.053 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_vs/browserLink - -
+2023-09-11 18:15:48.059 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 5.7604ms
+2023-09-11 18:15:48.075 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.7049ms
+2023-09-11 18:15:48.122 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - -
+2023-09-11 18:15:48.122 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-09-11 18:15:48.122 +02:00 [DBG] Request did not match any endpoints
+2023-09-11 18:15:48.213 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 91.6093ms
+2023-09-11 18:15:55.556 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7210/api/UsersTests/Nobody - 0
+2023-09-11 18:15:55.561 +02:00 [DBG] 1 candidate(s) found for the request path '/api/UsersTests/Nobody'
+2023-09-11 18:15:55.565 +02:00 [DBG] Endpoint 'P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)' with route pattern 'api/UsersTests/Nobody' is valid for the request path '/api/UsersTests/Nobody'
+2023-09-11 18:15:55.565 +02:00 [DBG] Request matched endpoint 'P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)'
+2023-09-11 18:15:55.566 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-09-11 18:15:55.623 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-09-11 18:15:55.624 +02:00 [INF] Executing endpoint 'P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)'
+2023-09-11 18:15:55.637 +02:00 [INF] Route matched with {action = "GetAllUsers", controller = "UsersTests"}. Executing controller action with signature System.String GetAllUsers() on controller P7CreateRestApi.Controllers.UsersTestsController (P7CreateRestApi).
+2023-09-11 18:15:55.638 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-09-11 18:15:55.638 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-09-11 18:15:55.638 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-09-11 18:15:55.638 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-09-11 18:15:55.638 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-09-11 18:15:55.638 +02:00 [DBG] Executing controller factory for controller P7CreateRestApi.Controllers.UsersTestsController (P7CreateRestApi)
+2023-09-11 18:15:55.639 +02:00 [DBG] Executed controller factory for controller P7CreateRestApi.Controllers.UsersTestsController (P7CreateRestApi)
+2023-09-11 18:15:55.683 +02:00 [INF] Executing action method P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi) - Validation state: "Valid"
+2023-09-11 18:15:55.687 +02:00 [INF] Executed action method P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.1852ms.
+2023-09-11 18:15:55.689 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-09-11 18:15:55.692 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-09-11 18:15:55.692 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-09-11 18:15:55.692 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-09-11 18:15:55.696 +02:00 [INF] Executed action P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi) in 54.8373ms
+2023-09-11 18:15:55.696 +02:00 [INF] Executed endpoint 'P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)'
+2023-09-11 18:15:55.698 +02:00 [INF] HTTP POST /api/UsersTests/Nobody responded 200 in 128.2944 ms
+2023-09-11 18:15:55.698 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7210/api/UsersTests/Nobody - 0 - 200 - text/plain;+charset=utf-8 142.3191ms
