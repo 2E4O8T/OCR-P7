@@ -30,12 +30,12 @@ namespace P7CreateRestApi.Services
             return await _userManager.CheckPasswordAsync(identityUser, user.Password);
         }
 
-        public async Task<bool> RegisterUser(LoginUser user)
+        public async Task<bool> RegisterUser(RegisterUser user)
         {
             var identityUser = new IdentityUser
             {
                 UserName = user.UserName,
-                Email = user.UserName
+                Email = user.UserName,
             };
 
             var result = await _userManager.CreateAsync(identityUser, user.Password);

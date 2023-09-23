@@ -1,0 +1,20 @@
+09/21/2023 10:56:00 Wildcard detected, all requests with hosts will be allowed.
+09/21/2023 10:56:00 No candidates found for the request path '"/swagger/index.html"'
+09/21/2023 10:56:00 Request did not match any endpoints
+09/21/2023 10:56:00 Response markup is scheduled to include browser refresh script injection.
+09/21/2023 10:56:00 Response markup was updated to include browser refresh script injection.
+09/21/2023 10:56:00 Request starting HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - -
+09/21/2023 10:56:00 Request finished HTTP/2 GET https://localhost:7210/swagger/index.html - - - 200 - text/html;charset=utf-8 381.0516ms
+09/21/2023 10:56:00 Request finished HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 9.8489ms
+09/21/2023 10:56:00 Request starting HTTP/2 GET https://localhost:7210/_vs/browserLink - -
+09/21/2023 10:56:00 Request finished HTTP/2 GET https://localhost:7210/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 219.4005ms
+09/21/2023 10:56:00 Request starting HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - -
+09/21/2023 10:56:00 No candidates found for the request path '"/swagger/v1/swagger.json"'
+09/21/2023 10:56:00 Request did not match any endpoints
+09/21/2023 10:56:00 Request finished HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.1995ms
+09/21/2023 10:56:09 Authentication of the HTTPS connection timed out.
+09/21/2023 10:56:09 Authentication of the HTTPS connection timed out.
+09/21/2023 10:56:09 Connection id ""0HMTQG29K0IER"" stopped.
+09/21/2023 10:56:09 Connection id ""0HMTQG29K0IES"" stopped.
+09/21/2023 10:56:09 Connection id ""0HMTQG29K0IES"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+09/21/2023 10:56:09 Connection id ""0HMTQG29K0IER"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
