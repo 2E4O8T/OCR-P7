@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace P7CreateRestApi.Controllers
@@ -8,8 +7,9 @@ namespace P7CreateRestApi.Controllers
     [ApiController]
     public class UsersTestsController : ControllerBase
     {
-        [HttpPost("Administrator")]
-        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        [Route("Administrator")]
+        [Authorize(Roles ="Admin")]
         public string GetAdmin()
         {
             return "You are an administrator!";

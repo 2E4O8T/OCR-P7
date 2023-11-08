@@ -1,0 +1,8 @@
+11/06/2023 19:48:25 Application Starting Up
+11/06/2023 19:48:25 An 'IServiceProvider' was created for internal use by Entity Framework.
+11/06/2023 19:48:25 The index "{'UserId'}" was not created on entity type '"IdentityUserRole<string>"' as the properties are already covered by the index "{'UserId', 'RoleId'}".
+11/06/2023 19:48:25 The index "{'UserId'}" was not created on entity type '"IdentityUserToken<string>"' as the properties are already covered by the index "{'UserId', 'LoginProvider', 'Name'}".
+11/06/2023 19:48:26 Entity Framework Core "7.0.10" initialized '"UsersDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"7.0.10"' with options: "None"
+11/06/2023 19:48:26 The index "{'UserId'}" was not created on entity type '"IdentityUserRole<string>"' as the properties are already covered by the index "{'UserId', 'RoleId'}".
+11/06/2023 19:48:26 The index "{'UserId'}" was not created on entity type '"IdentityUserToken<string>"' as the properties are already covered by the index "{'UserId', 'LoginProvider', 'Name'}".
+11/06/2023 19:48:26 '"UsersDbContext"' disposed.

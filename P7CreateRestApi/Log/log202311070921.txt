@@ -1,0 +1,98 @@
+11/07/2023 09:21:20 Request starting HTTP/2 POST https://localhost:7210/api/AuthManagement/Login application/json 64
+11/07/2023 09:21:20 1 candidate(s) found for the request path '"/api/AuthManagement/Login"'
+11/07/2023 09:21:20 Endpoint '"P7CreateRestApi.Controllers.AuthManagementController.Login (P7CreateRestApi)"' with route pattern '"api/AuthManagement/Login"' is valid for the request path '"/api/AuthManagement/Login"'
+11/07/2023 09:21:20 Request matched endpoint '"P7CreateRestApi.Controllers.AuthManagementController.Login (P7CreateRestApi)"'
+11/07/2023 09:21:20 Static files was skipped as the request already matched an endpoint.
+11/07/2023 09:21:20 AuthenticationScheme: "Bearer" was not authenticated.
+11/07/2023 09:21:20 Executing endpoint '"P7CreateRestApi.Controllers.AuthManagementController.Login (P7CreateRestApi)"'
+11/07/2023 09:21:20 Route matched with "{action = \"Login\", controller = \"AuthManagement\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(P7CreateRestApi.Domain.DTOS.Requests.UserLoginRequest)" on controller "P7CreateRestApi.Controllers.AuthManagementController" ("P7CreateRestApi").
+11/07/2023 09:21:20 Execution plan of "authorization" filters (in the following order): ["None"]
+11/07/2023 09:21:20 Execution plan of "resource" filters (in the following order): ["None"]
+11/07/2023 09:21:20 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+11/07/2023 09:21:20 Execution plan of "exception" filters (in the following order): ["None"]
+11/07/2023 09:21:20 Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+11/07/2023 09:21:20 Executing controller factory for controller "P7CreateRestApi.Controllers.AuthManagementController" ("P7CreateRestApi")
+11/07/2023 09:21:20 An 'IServiceProvider' was created for internal use by Entity Framework.
+11/07/2023 09:21:20 Executed controller factory for controller "P7CreateRestApi.Controllers.AuthManagementController" ("P7CreateRestApi")
+11/07/2023 09:21:20 Attempting to bind parameter '"user"' of type '"P7CreateRestApi.Domain.DTOS.Requests.UserLoginRequest"' ...
+11/07/2023 09:21:20 Attempting to bind parameter '"user"' of type '"P7CreateRestApi.Domain.DTOS.Requests.UserLoginRequest"' using the name '""' in request data ...
+11/07/2023 09:21:20 Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+11/07/2023 09:21:20 Connection id ""0HMUVD9NE09RO"", Request id ""0HMUVD9NE09RO:0000000B"": started reading request body.
+11/07/2023 09:21:20 Connection id ""0HMUVD9NE09RO"", Request id ""0HMUVD9NE09RO:0000000B"": done reading request body.
+11/07/2023 09:21:20 JSON input formatter succeeded, deserializing to type '"P7CreateRestApi.Domain.DTOS.Requests.UserLoginRequest"'
+11/07/2023 09:21:20 Done attempting to bind parameter '"user"' of type '"P7CreateRestApi.Domain.DTOS.Requests.UserLoginRequest"'.
+11/07/2023 09:21:20 Done attempting to bind parameter '"user"' of type '"P7CreateRestApi.Domain.DTOS.Requests.UserLoginRequest"'.
+11/07/2023 09:21:20 Attempting to validate the bound parameter '"user"' of type '"P7CreateRestApi.Domain.DTOS.Requests.UserLoginRequest"' ...
+11/07/2023 09:21:20 Done attempting to validate the bound parameter '"user"' of type '"P7CreateRestApi.Domain.DTOS.Requests.UserLoginRequest"'.
+11/07/2023 09:21:20 Executing action method "P7CreateRestApi.Controllers.AuthManagementController.Login (P7CreateRestApi)" - Validation state: Valid
+11/07/2023 09:21:20 The index "{'UserId'}" was not created on entity type '"IdentityUserRole<string>"' as the properties are already covered by the index "{'UserId', 'RoleId'}".
+11/07/2023 09:21:20 The index "{'UserId'}" was not created on entity type '"IdentityUserToken<string>"' as the properties are already covered by the index "{'UserId', 'LoginProvider', 'Name'}".
+11/07/2023 09:21:20 Entity Framework Core "7.0.10" initialized '"UsersDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"7.0.10"' with options: "None"
+11/07/2023 09:21:20 Compiling query expression: "
+"'"DbSet<IdentityUser>()
+    .SingleOrDefault(u => u.NormalizedEmail == __normalizedEmail_0)"'
+11/07/2023 09:21:21 Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdentityUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdentityUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityUser.Id (string) Required PK AfterSave:Throw, 0], [Property: IdentityUser.AccessFailedCount (int) Required, 1], [Property: IdentityUser.ConcurrencyStamp (string) Concurrency, 2], [Property: IdentityUser.Email (string) MaxLength(256), 3], [Property: IdentityUser.EmailConfirmed (bool) Required, 4], [Property: IdentityUser.LockoutEnabled (bool) Required, 5], [Property: IdentityUser.LockoutEnd (DateTimeOffset?), 6], [Property: IdentityUser.NormalizedEmail (string) Index MaxLength(256), 7], [Property: IdentityUser.NormalizedUserName (string) Index MaxLength(256), 8], [Property: IdentityUser.PasswordHash (string), 9], [Property: IdentityUser.PhoneNumber (string), 10], [Property: IdentityUser.PhoneNumberConfirmed (bool) Required, 11], [Property: IdentityUser.SecurityStamp (string), 12], [Property: IdentityUser.TwoFactorEnabled (bool) Required, 13], [Property: IdentityUser.UserName (string) MaxLength(256), 14] }
+            SELECT TOP(2) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedEmail == @__normalizedEmail_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityUser>, 
+        P7CreateRestApi.Data.UsersDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+11/07/2023 09:21:21 Creating DbCommand for '"ExecuteReader"'.
+11/07/2023 09:21:21 Creating DbConnection.
+11/07/2023 09:21:21 Created DbConnection. (27ms).
+11/07/2023 09:21:21 Created DbCommand for '"ExecuteReader"' (38ms).
+11/07/2023 09:21:21 Initialized DbCommand for '"ExecuteReader"' (49ms).
+11/07/2023 09:21:21 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/07/2023 09:21:21 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/07/2023 09:21:21 Executing DbCommand [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0"
+11/07/2023 09:21:21 Executed DbCommand ("72"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0"
+11/07/2023 09:21:21 Context '"UsersDbContext"' started tracking '"IdentityUser"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+11/07/2023 09:21:21 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/07/2023 09:21:21 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 87ms reading results.
+11/07/2023 09:21:21 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/07/2023 09:21:21 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (7ms).
+11/07/2023 09:21:21 Executed action method "P7CreateRestApi.Controllers.AuthManagementController.Login (P7CreateRestApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1659.9966ms.
+11/07/2023 09:21:21 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+11/07/2023 09:21:21 No information found on request to perform content negotiation.
+11/07/2023 09:21:21 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+11/07/2023 09:21:21 Attempting to select the first formatter in the output formatters list which can write the result.
+11/07/2023 09:21:21 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+11/07/2023 09:21:21 Executing "OkObjectResult", writing value of type '"P7CreateRestApi.Domain.DTOS.Responses.RegistrationResponse"'.
+11/07/2023 09:21:21 Executed action "P7CreateRestApi.Controllers.AuthManagementController.Login (P7CreateRestApi)" in 1895.0767ms
+11/07/2023 09:21:21 Executed endpoint '"P7CreateRestApi.Controllers.AuthManagementController.Login (P7CreateRestApi)"'
+11/07/2023 09:21:21 HTTP "POST" "/api/AuthManagement/Login" responded 200 in 1932.3232 ms
+11/07/2023 09:21:21 '"UsersDbContext"' disposed.
+11/07/2023 09:21:21 Disposing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/07/2023 09:21:21 Disposed connection to database '""' on server '""' (1ms).
+11/07/2023 09:21:21 Request finished HTTP/2 POST https://localhost:7210/api/AuthManagement/Login application/json 64 - 200 - application/json;+charset=utf-8 1951.9561ms
+11/07/2023 09:21:45 Request starting HTTP/2 GET https://localhost:7210/api/Bids/Get All Bids - -
+11/07/2023 09:21:45 2 candidate(s) found for the request path '"/api/Bids/Get All Bids"'
+11/07/2023 09:21:45 Endpoint '"P7CreateRestApi.Controllers.BidsController.GetBids (P7CreateRestApi)"' with route pattern '"api/Bids/Get All Bids"' is valid for the request path '"/api/Bids/Get All Bids"'
+11/07/2023 09:21:45 Endpoint '"P7CreateRestApi.Controllers.BidsController.GetBid (P7CreateRestApi)"' with route pattern '"api/Bids/{id}"' is valid for the request path '"/api/Bids/Get All Bids"'
+11/07/2023 09:21:45 Request matched endpoint '"P7CreateRestApi.Controllers.BidsController.GetBids (P7CreateRestApi)"'
+11/07/2023 09:21:45 Static files was skipped as the request already matched an endpoint.
+11/07/2023 09:21:45 Successfully validated the token.
+11/07/2023 09:21:45 AuthenticationScheme: "Bearer" was successfully authenticated.
+11/07/2023 09:21:45 Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Creator|Updator|SimpleUser)"
+11/07/2023 09:21:45 AuthenticationScheme: "Bearer" was forbidden.
+11/07/2023 09:21:45 HTTP "GET" "/api/Bids/Get All Bids" responded 403 in 54.5067 ms
+11/07/2023 09:21:45 Request finished HTTP/2 GET https://localhost:7210/api/Bids/Get All Bids - - - 403 0 - 61.9565ms

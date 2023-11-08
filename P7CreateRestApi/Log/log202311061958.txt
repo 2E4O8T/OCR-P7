@@ -1,0 +1,167 @@
+11/06/2023 19:58:31 Request starting HTTP/2 POST https://localhost:7210/api/Setup/AddUser?user=Toto - 0
+11/06/2023 19:58:31 1 candidate(s) found for the request path '"/api/Setup/AddUser"'
+11/06/2023 19:58:31 Endpoint '"P7CreateRestApi.Controllers.SetupController.CreateUser (P7CreateRestApi)"' with route pattern '"api/Setup/AddUser"' is valid for the request path '"/api/Setup/AddUser"'
+11/06/2023 19:58:31 Request matched endpoint '"P7CreateRestApi.Controllers.SetupController.CreateUser (P7CreateRestApi)"'
+11/06/2023 19:58:31 Static files was skipped as the request already matched an endpoint.
+11/06/2023 19:58:31 Successfully validated the token.
+11/06/2023 19:58:31 AuthenticationScheme: "Bearer" was successfully authenticated.
+11/06/2023 19:58:31 Executing endpoint '"P7CreateRestApi.Controllers.SetupController.CreateUser (P7CreateRestApi)"'
+11/06/2023 19:58:31 Route matched with "{action = \"CreateUser\", controller = \"Setup\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(System.String)" on controller "P7CreateRestApi.Controllers.SetupController" ("P7CreateRestApi").
+11/06/2023 19:58:31 Execution plan of "authorization" filters (in the following order): ["None"]
+11/06/2023 19:58:31 Execution plan of "resource" filters (in the following order): ["None"]
+11/06/2023 19:58:31 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+11/06/2023 19:58:31 Execution plan of "exception" filters (in the following order): ["None"]
+11/06/2023 19:58:31 Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+11/06/2023 19:58:31 Executing controller factory for controller "P7CreateRestApi.Controllers.SetupController" ("P7CreateRestApi")
+11/06/2023 19:58:31 Executed controller factory for controller "P7CreateRestApi.Controllers.SetupController" ("P7CreateRestApi")
+11/06/2023 19:58:31 Attempting to bind parameter '"user"' of type '"System.String"' ...
+11/06/2023 19:58:31 Attempting to bind parameter '"user"' of type '"System.String"' using the name '"user"' in request data ...
+11/06/2023 19:58:31 Done attempting to bind parameter '"user"' of type '"System.String"'.
+11/06/2023 19:58:31 Done attempting to bind parameter '"user"' of type '"System.String"'.
+11/06/2023 19:58:31 Attempting to validate the bound parameter '"user"' of type '"System.String"' ...
+11/06/2023 19:58:31 Done attempting to validate the bound parameter '"user"' of type '"System.String"'.
+11/06/2023 19:58:31 Executing action method "P7CreateRestApi.Controllers.SetupController.CreateUser (P7CreateRestApi)" - Validation state: Valid
+11/06/2023 19:58:31 Entity Framework Core "7.0.10" initialized '"UsersDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"7.0.10"' with options: "None"
+11/06/2023 19:58:31 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:58:31 Creating DbConnection.
+11/06/2023 19:58:31 Created DbConnection. (0ms).
+11/06/2023 19:58:31 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:58:31 Initialized DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:58:31 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 Executing DbCommand [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0"
+11/06/2023 19:58:31 Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0"
+11/06/2023 19:58:31 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 0ms reading results.
+11/06/2023 19:58:31 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:58:31 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:58:31 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:58:31 Initialized DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:58:31 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 Executing DbCommand [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0"
+11/06/2023 19:58:31 L'utilisateur Toto n'a pas été ajouté
+11/06/2023 19:58:31 Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0"
+11/06/2023 19:58:31 Executed action method "P7CreateRestApi.Controllers.SetupController.CreateUser (P7CreateRestApi)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 11.7815ms.
+11/06/2023 19:58:31 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 0ms reading results.
+11/06/2023 19:58:31 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+11/06/2023 19:58:31 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 No information found on request to perform content negotiation.
+11/06/2023 19:58:31 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:58:31 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+11/06/2023 19:58:31 Attempting to select the first formatter in the output formatters list which can write the result.
+11/06/2023 19:58:31 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+11/06/2023 19:58:31 Context '"UsersDbContext"' started tracking '"IdentityUser"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+11/06/2023 19:58:31 Executing "BadRequestObjectResult", writing value of type '"<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+11/06/2023 19:58:31 SaveChanges starting for '"UsersDbContext"'.
+11/06/2023 19:58:31 DetectChanges starting for '"UsersDbContext"'.
+11/06/2023 19:58:31 DetectChanges completed for '"UsersDbContext"'.
+11/06/2023 19:58:31 Executed action "P7CreateRestApi.Controllers.SetupController.CreateUser (P7CreateRestApi)" in 27.211ms
+11/06/2023 19:58:31 Executed endpoint '"P7CreateRestApi.Controllers.SetupController.CreateUser (P7CreateRestApi)"'
+11/06/2023 19:58:31 HTTP "POST" "/api/Setup/AddUser" responded 400 in 32.1567 ms
+11/06/2023 19:58:31 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 '"UsersDbContext"' disposed.
+11/06/2023 19:58:31 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 Disposing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:58:31 Disposed connection to database '""' on server '""' (0ms).
+11/06/2023 19:58:31 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:58:31 Initialized DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:58:31 Creating DbConnection.
+11/06/2023 19:58:31 Request finished HTTP/2 POST https://localhost:7210/api/Setup/AddUser?user=Toto - 0 - 400 - application/json;+charset=utf-8 86.2095ms
+11/06/2023 19:58:31 Created DbConnection. (0ms).
+11/06/2023 19:58:31 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 Executing DbCommand [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);"
+11/06/2023 19:58:31 Failed executing DbCommand ("11"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);"
+11/06/2023 19:58:31 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:31 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:58:53 Request starting HTTP/2 GET https://localhost:7210/api/Setup/GetAllUsers - -
+11/06/2023 19:58:53 1 candidate(s) found for the request path '"/api/Setup/GetAllUsers"'
+11/06/2023 19:58:53 Endpoint '"P7CreateRestApi.Controllers.SetupController.GetAllUsers (P7CreateRestApi)"' with route pattern '"api/Setup/GetAllUsers"' is valid for the request path '"/api/Setup/GetAllUsers"'
+11/06/2023 19:58:53 Request matched endpoint '"P7CreateRestApi.Controllers.SetupController.GetAllUsers (P7CreateRestApi)"'
+11/06/2023 19:58:53 Static files was skipped as the request already matched an endpoint.
+11/06/2023 19:58:53 Successfully validated the token.
+11/06/2023 19:58:53 AuthenticationScheme: "Bearer" was successfully authenticated.
+11/06/2023 19:58:53 Executing endpoint '"P7CreateRestApi.Controllers.SetupController.GetAllUsers (P7CreateRestApi)"'
+11/06/2023 19:58:53 Route matched with "{action = \"GetAllUsers\", controller = \"Setup\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUsers()" on controller "P7CreateRestApi.Controllers.SetupController" ("P7CreateRestApi").
+11/06/2023 19:58:53 Execution plan of "authorization" filters (in the following order): ["None"]
+11/06/2023 19:58:53 Execution plan of "resource" filters (in the following order): ["None"]
+11/06/2023 19:58:53 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+11/06/2023 19:58:53 Execution plan of "exception" filters (in the following order): ["None"]
+11/06/2023 19:58:53 Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+11/06/2023 19:58:53 Executing controller factory for controller "P7CreateRestApi.Controllers.SetupController" ("P7CreateRestApi")
+11/06/2023 19:58:53 Executed controller factory for controller "P7CreateRestApi.Controllers.SetupController" ("P7CreateRestApi")
+11/06/2023 19:58:53 Executing action method "P7CreateRestApi.Controllers.SetupController.GetAllUsers (P7CreateRestApi)" - Validation state: Valid
+11/06/2023 19:58:53 Entity Framework Core "7.0.10" initialized '"UsersDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"7.0.10"' with options: "None"
+11/06/2023 19:58:53 Compiling query expression: "
+"'"DbSet<IdentityUser>()"'
+11/06/2023 19:58:53 Generated query execution expression: "
+"'"queryContext => new SingleQueryingEnumerable<IdentityUser>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityUser.Id (string) Required PK AfterSave:Throw, 0], [Property: IdentityUser.AccessFailedCount (int) Required, 1], [Property: IdentityUser.ConcurrencyStamp (string) Concurrency, 2], [Property: IdentityUser.Email (string) MaxLength(256), 3], [Property: IdentityUser.EmailConfirmed (bool) Required, 4], [Property: IdentityUser.LockoutEnabled (bool) Required, 5], [Property: IdentityUser.LockoutEnd (DateTimeOffset?), 6], [Property: IdentityUser.NormalizedEmail (string) Index MaxLength(256), 7], [Property: IdentityUser.NormalizedUserName (string) Index MaxLength(256), 8], [Property: IdentityUser.PasswordHash (string), 9], [Property: IdentityUser.PhoneNumber (string), 10], [Property: IdentityUser.PhoneNumberConfirmed (bool) Required, 11], [Property: IdentityUser.SecurityStamp (string), 12], [Property: IdentityUser.TwoFactorEnabled (bool) Required, 13], [Property: IdentityUser.UserName (string) MaxLength(256), 14] }
+        SELECT a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+        FROM AspNetUsers AS a), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityUser>, 
+    P7CreateRestApi.Data.UsersDbContext, 
+    False, 
+    False, 
+    True
+)"'
+11/06/2023 19:58:53 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:58:53 Creating DbConnection.
+11/06/2023 19:58:53 Created DbConnection. (0ms).
+11/06/2023 19:58:53 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:58:53 Initialized DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:58:53 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:53 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:53 Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]"
+11/06/2023 19:58:53 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]"
+11/06/2023 19:58:53 Context '"UsersDbContext"' started tracking '"IdentityUser"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+11/06/2023 19:58:53 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:53 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 0ms reading results.
+11/06/2023 19:58:53 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:53 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:58:53 Executed action method "P7CreateRestApi.Controllers.SetupController.GetAllUsers (P7CreateRestApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 10.2163ms.
+11/06/2023 19:58:53 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+11/06/2023 19:58:53 No information found on request to perform content negotiation.
+11/06/2023 19:58:53 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+11/06/2023 19:58:53 Attempting to select the first formatter in the output formatters list which can write the result.
+11/06/2023 19:58:53 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+11/06/2023 19:58:53 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.Extensions.Identity.Stores, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'.
+11/06/2023 19:58:53 Executed action "P7CreateRestApi.Controllers.SetupController.GetAllUsers (P7CreateRestApi)" in 41.0728ms
+11/06/2023 19:58:53 Executed endpoint '"P7CreateRestApi.Controllers.SetupController.GetAllUsers (P7CreateRestApi)"'
+11/06/2023 19:58:53 HTTP "GET" "/api/Setup/GetAllUsers" responded 200 in 54.5981 ms
+11/06/2023 19:58:53 '"UsersDbContext"' disposed.
+11/06/2023 19:58:53 Disposing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:58:53 Disposed connection to database '""' on server '""' (0ms).
+11/06/2023 19:58:53 Request finished HTTP/2 GET https://localhost:7210/api/Setup/GetAllUsers - - - 200 - application/json;+charset=utf-8 56.8569ms

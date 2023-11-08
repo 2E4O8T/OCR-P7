@@ -1,0 +1,94 @@
+11/06/2023 16:51:25 Application Starting Up
+11/06/2023 16:51:26 Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+11/06/2023 16:51:26 Hosting starting
+11/06/2023 16:51:26 User profile is available. Using '"C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+11/06/2023 16:51:26 Reading data from file '"C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-4a1b1a4e-f5ad-453e-a367-f5af7db0872a.xml"'.
+11/06/2023 16:51:26 Reading data from file '"C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-6e968384-c5a7-4c50-adeb-b9b6866c1a4b.xml"'.
+11/06/2023 16:51:26 Reading data from file '"C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-76dc9154-53ef-4231-8ce5-898bf4c9bd2f.xml"'.
+11/06/2023 16:51:26 Reading data from file '"C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-8737ec51-afad-4c76-b60c-2366aabdc414.xml"'.
+11/06/2023 16:51:26 Found key {4a1b1a4e-f5ad-453e-a367-f5af7db0872a}.
+11/06/2023 16:51:26 Found key {6e968384-c5a7-4c50-adeb-b9b6866c1a4b}.
+11/06/2023 16:51:26 Found key {76dc9154-53ef-4231-8ce5-898bf4c9bd2f}.
+11/06/2023 16:51:26 Found key {8737ec51-afad-4c76-b60c-2366aabdc414}.
+11/06/2023 16:51:26 Considering key {4a1b1a4e-f5ad-453e-a367-f5af7db0872a} with expiration date 2023-12-31 09:40:54Z as default key.
+11/06/2023 16:51:26 Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+11/06/2023 16:51:26 Decrypting secret element using Windows DPAPI.
+11/06/2023 16:51:26 Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+11/06/2023 16:51:26 Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+11/06/2023 16:51:26 Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+11/06/2023 16:51:26 Using key {4a1b1a4e-f5ad-453e-a367-f5af7db0872a} as the default key.
+11/06/2023 16:51:26 Key ring with default key {4a1b1a4e-f5ad-453e-a367-f5af7db0872a} was loaded during application startup.
+11/06/2023 16:51:26 Using development certificate: "CN=localhost" (Thumbprint: "17434C692F7E70CD32C9D3B60C423EA7F1AB4EB2")
+11/06/2023 16:51:26 Now listening on: "https://localhost:7210"
+11/06/2023 16:51:26 Now listening on: "http://localhost:5267"
+11/06/2023 16:51:26 Loaded hosting startup assembly "P7CreateRestApi"
+11/06/2023 16:51:26 Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh"
+11/06/2023 16:51:26 Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net"
+11/06/2023 16:51:26 Application started. Press Ctrl+C to shut down.
+11/06/2023 16:51:26 Hosting environment: "Development"
+11/06/2023 16:51:26 Content root path: "C:\Repos\OCR\P7\P7CreateRestApi\"
+11/06/2023 16:51:26 Hosting started
+11/06/2023 16:51:26 Connection id ""0HMUUS0U42CR9"" received FIN.
+11/06/2023 16:51:26 Connection id ""0HMUUS0U42CR9"" accepted.
+11/06/2023 16:51:26 Connection id ""0HMUUS0U42CR9"" started.
+11/06/2023 16:51:26 Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+11/06/2023 16:51:26 Connection id ""0HMUUS0U42CR9"" stopped.
+11/06/2023 16:51:26 Connection id ""0HMUUS0U42CR9"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+11/06/2023 16:51:27 Connection id ""0HMUUS0U42CRA"" accepted.
+11/06/2023 16:51:27 Connection id ""0HMUUS0U42CRA"" started.
+11/06/2023 16:51:27 Connection "0HMUUS0U42CRA" established using the following protocol: Tls12
+11/06/2023 16:51:27 Request starting HTTP/2 GET https://localhost:7210/swagger/index.html - -
+11/06/2023 16:51:27 Wildcard detected, all requests with hosts will be allowed.
+11/06/2023 16:51:27 No candidates found for the request path '"/swagger/index.html"'
+11/06/2023 16:51:27 Request did not match any endpoints
+11/06/2023 16:51:27 Response markup is scheduled to include browser refresh script injection.
+11/06/2023 16:51:27 Response markup was updated to include browser refresh script injection.
+11/06/2023 16:51:27 Request starting HTTP/2 GET https://localhost:7210/_vs/browserLink - -
+11/06/2023 16:51:27 Request starting HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - -
+11/06/2023 16:51:27 Request finished HTTP/2 GET https://localhost:7210/swagger/index.html - - - 200 - text/html;charset=utf-8 347.0552ms
+11/06/2023 16:51:27 Request finished HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 15.4716ms
+11/06/2023 16:51:27 Request finished HTTP/2 GET https://localhost:7210/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.2539ms
+11/06/2023 16:51:27 Request starting HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - -
+11/06/2023 16:51:27 No candidates found for the request path '"/swagger/v1/swagger.json"'
+11/06/2023 16:51:27 Request did not match any endpoints
+11/06/2023 16:51:27 Request finished HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.9050ms
+11/06/2023 16:51:42 Request starting HTTP/2 POST https://localhost:7210/api/UsersTests/Nobody - 0
+11/06/2023 16:51:42 1 candidate(s) found for the request path '"/api/UsersTests/Nobody"'
+11/06/2023 16:51:42 Endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)"' with route pattern '"api/UsersTests/Nobody"' is valid for the request path '"/api/UsersTests/Nobody"'
+11/06/2023 16:51:42 Request matched endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)"'
+11/06/2023 16:51:42 Static files was skipped as the request already matched an endpoint.
+11/06/2023 16:51:42 AuthenticationScheme: "Bearer" was not authenticated.
+11/06/2023 16:51:42 Executing endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)"'
+11/06/2023 16:51:42 Route matched with "{action = \"GetAllUsers\", controller = \"UsersTests\"}". Executing controller action with signature "System.String GetAllUsers()" on controller "P7CreateRestApi.Controllers.UsersTestsController" ("P7CreateRestApi").
+11/06/2023 16:51:42 Execution plan of "authorization" filters (in the following order): ["None"]
+11/06/2023 16:51:42 Execution plan of "resource" filters (in the following order): ["None"]
+11/06/2023 16:51:42 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+11/06/2023 16:51:42 Execution plan of "exception" filters (in the following order): ["None"]
+11/06/2023 16:51:42 Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+11/06/2023 16:51:42 Executing controller factory for controller "P7CreateRestApi.Controllers.UsersTestsController" ("P7CreateRestApi")
+11/06/2023 16:51:42 Executed controller factory for controller "P7CreateRestApi.Controllers.UsersTestsController" ("P7CreateRestApi")
+11/06/2023 16:51:42 Executing action method "P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)" - Validation state: Valid
+11/06/2023 16:51:42 Executed action method "P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.1861ms.
+11/06/2023 16:51:42 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+11/06/2023 16:51:42 Attempting to select an output formatter based on Accept header '["text/plain"]'.
+11/06/2023 16:51:42 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+11/06/2023 16:51:42 Executing "ObjectResult", writing value of type '"System.String"'.
+11/06/2023 16:51:42 Executed action "P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)" in 56.6042ms
+11/06/2023 16:51:42 Executed endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)"'
+11/06/2023 16:51:42 HTTP "POST" "/api/UsersTests/Nobody" responded 200 in 131.0730 ms
+11/06/2023 16:51:42 Request finished HTTP/2 POST https://localhost:7210/api/UsersTests/Nobody - 0 - 200 - text/plain;+charset=utf-8 146.0899ms
+11/06/2023 16:51:52 Request starting HTTP/2 POST https://localhost:7210/api/UsersTests/Administrator - 0
+11/06/2023 16:51:52 1 candidate(s) found for the request path '"/api/UsersTests/Administrator"'
+11/06/2023 16:51:52 Endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi)"' with route pattern '"api/UsersTests/Administrator"' is valid for the request path '"/api/UsersTests/Administrator"'
+11/06/2023 16:51:52 Request matched endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi)"'
+11/06/2023 16:51:52 Static files was skipped as the request already matched an endpoint.
+11/06/2023 16:51:52 AuthenticationScheme: "Bearer" was not authenticated.
+11/06/2023 16:51:52 Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Prout)"
+11/06/2023 16:51:52 AuthenticationScheme: "Bearer" was challenged.
+11/06/2023 16:51:52 HTTP "POST" "/api/UsersTests/Administrator" responded 401 in 12.0146 ms
+11/06/2023 16:51:52 Request finished HTTP/2 POST https://localhost:7210/api/UsersTests/Administrator - 0 - 401 0 - 14.5470ms

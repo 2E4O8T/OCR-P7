@@ -1,0 +1,68 @@
+11/03/2023 18:05:40 Application Starting Up
+11/03/2023 18:05:41 Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+11/03/2023 18:05:41 Hosting starting
+11/03/2023 18:05:41 User profile is available. Using '"C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+11/03/2023 18:05:41 Reading data from file '"C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-4a1b1a4e-f5ad-453e-a367-f5af7db0872a.xml"'.
+11/03/2023 18:05:41 Reading data from file '"C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-6e968384-c5a7-4c50-adeb-b9b6866c1a4b.xml"'.
+11/03/2023 18:05:41 Reading data from file '"C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-76dc9154-53ef-4231-8ce5-898bf4c9bd2f.xml"'.
+11/03/2023 18:05:41 Reading data from file '"C:\Users\A141QT\AppData\Local\ASP.NET\DataProtection-Keys\key-8737ec51-afad-4c76-b60c-2366aabdc414.xml"'.
+11/03/2023 18:05:41 Found key {4a1b1a4e-f5ad-453e-a367-f5af7db0872a}.
+11/03/2023 18:05:41 Found key {6e968384-c5a7-4c50-adeb-b9b6866c1a4b}.
+11/03/2023 18:05:41 Found key {76dc9154-53ef-4231-8ce5-898bf4c9bd2f}.
+11/03/2023 18:05:41 Found key {8737ec51-afad-4c76-b60c-2366aabdc414}.
+11/03/2023 18:05:41 Considering key {4a1b1a4e-f5ad-453e-a367-f5af7db0872a} with expiration date 2023-12-31 09:40:54Z as default key.
+11/03/2023 18:05:41 Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+11/03/2023 18:05:41 Decrypting secret element using Windows DPAPI.
+11/03/2023 18:05:41 Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+11/03/2023 18:05:41 Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+11/03/2023 18:05:41 Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+11/03/2023 18:05:41 Using key {4a1b1a4e-f5ad-453e-a367-f5af7db0872a} as the default key.
+11/03/2023 18:05:41 Key ring with default key {4a1b1a4e-f5ad-453e-a367-f5af7db0872a} was loaded during application startup.
+11/03/2023 18:05:41 Using development certificate: "CN=localhost" (Thumbprint: "17434C692F7E70CD32C9D3B60C423EA7F1AB4EB2")
+11/03/2023 18:05:41 Now listening on: "https://localhost:7210"
+11/03/2023 18:05:41 Now listening on: "http://localhost:5267"
+11/03/2023 18:05:41 Loaded hosting startup assembly "P7CreateRestApi"
+11/03/2023 18:05:41 Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh"
+11/03/2023 18:05:41 Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net"
+11/03/2023 18:05:41 Application started. Press Ctrl+C to shut down.
+11/03/2023 18:05:41 Hosting environment: "Development"
+11/03/2023 18:05:41 Content root path: "C:\Repos\OCR\P7\P7CreateRestApi\"
+11/03/2023 18:05:41 Hosting started
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LT"" received FIN.
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LS"" received FIN.
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LS"" accepted.
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LT"" accepted.
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LS"" started.
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LT"" started.
+11/03/2023 18:05:42 Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+11/03/2023 18:05:42 Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LS"" stopped.
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LT"" stopped.
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LT"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LS"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LU"" accepted.
+11/03/2023 18:05:42 Connection id ""0HMUSHSEB14LU"" started.
+11/03/2023 18:05:42 Connection "0HMUSHSEB14LU" established using the following protocol: Tls12
+11/03/2023 18:05:42 Request starting HTTP/2 GET https://localhost:7210/swagger/index.html - -
+11/03/2023 18:05:42 Wildcard detected, all requests with hosts will be allowed.
+11/03/2023 18:05:42 No candidates found for the request path '"/swagger/index.html"'
+11/03/2023 18:05:42 Request did not match any endpoints
+11/03/2023 18:05:42 Response markup is scheduled to include browser refresh script injection.
+11/03/2023 18:05:42 Response markup was updated to include browser refresh script injection.
+11/03/2023 18:05:42 Request starting HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - -
+11/03/2023 18:05:42 Request finished HTTP/2 GET https://localhost:7210/swagger/index.html - - - 200 - text/html;charset=utf-8 340.3862ms
+11/03/2023 18:05:42 Request starting HTTP/2 GET https://localhost:7210/_vs/browserLink - -
+11/03/2023 18:05:42 Request finished HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 16.8070ms
+11/03/2023 18:05:42 Request finished HTTP/2 GET https://localhost:7210/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.9966ms
+11/03/2023 18:05:42 Request starting HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - -
+11/03/2023 18:05:42 No candidates found for the request path '"/swagger/v1/swagger.json"'
+11/03/2023 18:05:42 Request did not match any endpoints
+11/03/2023 18:05:43 Request finished HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 96.6563ms

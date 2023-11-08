@@ -1,0 +1,3 @@
+11/08/2023 12:48:40 Connection id ""0HMV08LAPP5PU"" is closed. The last processed stream ID was 13.
+11/08/2023 12:48:40 Connection id ""0HMV08LAPP5PU"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+11/08/2023 12:48:41 Connection id ""0HMV08LAPP5PU"" stopped.

@@ -1,0 +1,235 @@
+11/06/2023 19:55:20 Request starting HTTP/2 POST https://localhost:7210/api/Setup/AddUserToRole?email=Admin%40example.com&roleName=Prout - 0
+11/06/2023 19:55:20 1 candidate(s) found for the request path '"/api/Setup/AddUserToRole"'
+11/06/2023 19:55:20 Endpoint '"P7CreateRestApi.Controllers.SetupController.AddUserToRole (P7CreateRestApi)"' with route pattern '"api/Setup/AddUserToRole"' is valid for the request path '"/api/Setup/AddUserToRole"'
+11/06/2023 19:55:20 Request matched endpoint '"P7CreateRestApi.Controllers.SetupController.AddUserToRole (P7CreateRestApi)"'
+11/06/2023 19:55:20 Static files was skipped as the request already matched an endpoint.
+11/06/2023 19:55:20 AuthenticationScheme: "Bearer" was not authenticated.
+11/06/2023 19:55:20 Executing endpoint '"P7CreateRestApi.Controllers.SetupController.AddUserToRole (P7CreateRestApi)"'
+11/06/2023 19:55:20 Route matched with "{action = \"AddUserToRole\", controller = \"Setup\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddUserToRole(System.String, System.String)" on controller "P7CreateRestApi.Controllers.SetupController" ("P7CreateRestApi").
+11/06/2023 19:55:20 Execution plan of "authorization" filters (in the following order): ["None"]
+11/06/2023 19:55:20 Execution plan of "resource" filters (in the following order): ["None"]
+11/06/2023 19:55:20 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+11/06/2023 19:55:20 Execution plan of "exception" filters (in the following order): ["None"]
+11/06/2023 19:55:20 Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+11/06/2023 19:55:20 Executing controller factory for controller "P7CreateRestApi.Controllers.SetupController" ("P7CreateRestApi")
+11/06/2023 19:55:20 Executed controller factory for controller "P7CreateRestApi.Controllers.SetupController" ("P7CreateRestApi")
+11/06/2023 19:55:20 Attempting to bind parameter '"email"' of type '"System.String"' ...
+11/06/2023 19:55:20 Attempting to bind parameter '"email"' of type '"System.String"' using the name '"email"' in request data ...
+11/06/2023 19:55:20 Done attempting to bind parameter '"email"' of type '"System.String"'.
+11/06/2023 19:55:20 Done attempting to bind parameter '"email"' of type '"System.String"'.
+11/06/2023 19:55:20 Attempting to validate the bound parameter '"email"' of type '"System.String"' ...
+11/06/2023 19:55:20 Done attempting to validate the bound parameter '"email"' of type '"System.String"'.
+11/06/2023 19:55:20 Attempting to bind parameter '"roleName"' of type '"System.String"' ...
+11/06/2023 19:55:20 Attempting to bind parameter '"roleName"' of type '"System.String"' using the name '"roleName"' in request data ...
+11/06/2023 19:55:20 Done attempting to bind parameter '"roleName"' of type '"System.String"'.
+11/06/2023 19:55:20 Done attempting to bind parameter '"roleName"' of type '"System.String"'.
+11/06/2023 19:55:20 Attempting to validate the bound parameter '"roleName"' of type '"System.String"' ...
+11/06/2023 19:55:20 Done attempting to validate the bound parameter '"roleName"' of type '"System.String"'.
+11/06/2023 19:55:20 Executing action method "P7CreateRestApi.Controllers.SetupController.AddUserToRole (P7CreateRestApi)" - Validation state: Valid
+11/06/2023 19:55:20 Entity Framework Core "7.0.10" initialized '"UsersDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer":"7.0.10"' with options: "None"
+11/06/2023 19:55:20 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:55:20 Creating DbConnection.
+11/06/2023 19:55:20 Created DbConnection. (0ms).
+11/06/2023 19:55:20 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Initialized DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Executing DbCommand [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0"
+11/06/2023 19:55:20 Executed DbCommand ("9"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0"
+11/06/2023 19:55:20 Context '"UsersDbContext"' started tracking '"IdentityUser"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+11/06/2023 19:55:20 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 29ms reading results.
+11/06/2023 19:55:20 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:55:20 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:55:20 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Initialized DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Executing DbCommand [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0"
+11/06/2023 19:55:20 Executed DbCommand ("5"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0"
+11/06/2023 19:55:20 Context '"UsersDbContext"' started tracking '"IdentityRole"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+11/06/2023 19:55:20 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 0ms reading results.
+11/06/2023 19:55:20 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:55:20 Compiling query expression: "
+"'"DbSet<IdentityRole>()
+    .SingleOrDefault(r => r.NormalizedName == __normalizedRoleName_0)"'
+11/06/2023 19:55:20 Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdentityRole>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdentityRole>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityRole.Id (string) Required PK AfterSave:Throw, 0], [Property: IdentityRole.ConcurrencyStamp (string) Concurrency, 1], [Property: IdentityRole.Name (string) MaxLength(256), 2], [Property: IdentityRole.NormalizedName (string) Index MaxLength(256), 3] }
+            SELECT TOP(2) a.Id, a.ConcurrencyStamp, a.Name, a.NormalizedName
+            FROM AspNetRoles AS a
+            WHERE a.NormalizedName == @__normalizedRoleName_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityRole>, 
+        P7CreateRestApi.Data.UsersDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+11/06/2023 19:55:20 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:55:20 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Initialized DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Executing DbCommand [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0"
+11/06/2023 19:55:20 Executed DbCommand ("4"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0"
+11/06/2023 19:55:20 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 0ms reading results.
+11/06/2023 19:55:20 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:55:20 Compiling query expression: "
+"'"DbSet<IdentityUserRole<string>>()
+    .FirstOrDefault(e => EF.Property<string>(e, \"UserId\") == __p_0 && EF.Property<string>(e, \"RoleId\") == __p_1)"'
+11/06/2023 19:55:20 Generated query execution expression: "
+"'"queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdentityUserRole<string>>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdentityUserRole<string>>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityUserRole<string>.UserId (string) Required PK FK AfterSave:Throw, 0], [Property: IdentityUserRole<string>.RoleId (string) Required PK FK Index AfterSave:Throw, 1] }
+            SELECT TOP(1) a.UserId, a.RoleId
+            FROM AspNetUserRoles AS a
+            WHERE (a.UserId == @__p_0) && (a.RoleId == @__p_1)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityUserRole<string>>, 
+        P7CreateRestApi.Data.UsersDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)"'
+11/06/2023 19:55:20 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:55:20 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Initialized DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Executing DbCommand [Parameters=["@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1"
+11/06/2023 19:55:20 Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1"
+11/06/2023 19:55:20 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 0ms reading results.
+11/06/2023 19:55:20 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:55:20 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:55:20 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Initialized DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Executing DbCommand [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0"
+11/06/2023 19:55:20 Executed DbCommand ("1"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0"
+11/06/2023 19:55:20 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 0ms reading results.
+11/06/2023 19:55:20 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:55:20 Context '"UsersDbContext"' started tracking '"IdentityUserRole"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+11/06/2023 19:55:20 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:55:20 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Initialized DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Executing DbCommand [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0"
+11/06/2023 19:55:20 Executed DbCommand ("5"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0"
+11/06/2023 19:55:20 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 0ms reading results.
+11/06/2023 19:55:20 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:55:20 An entity of type '"IdentityUser"' tracked by '"UsersDbContext"' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+11/06/2023 19:55:20 SaveChanges starting for '"UsersDbContext"'.
+11/06/2023 19:55:20 DetectChanges starting for '"UsersDbContext"'.
+11/06/2023 19:55:20 DetectChanges completed for '"UsersDbContext"'.
+11/06/2023 19:55:20 Executing 2 update commands as a batch.
+11/06/2023 19:55:20 Opening connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Opened connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Beginning transaction with isolation level '"Unspecified"'.
+11/06/2023 19:55:20 Began transaction with isolation level '"ReadCommitted"'.
+11/06/2023 19:55:20 Creating DbCommand for '"ExecuteReader"'.
+11/06/2023 19:55:20 Created DbCommand for '"ExecuteReader"' (0ms).
+11/06/2023 19:55:20 Initialized DbCommand for '"ExecuteReader"' (3ms).
+11/06/2023 19:55:20 Executing DbCommand [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p16='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p17='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Email] = @p4, [EmailConfirmed] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+OUTPUT 1
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;"
+11/06/2023 19:55:20 Executed DbCommand ("8"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p16='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p17='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Email] = @p4, [EmailConfirmed] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+OUTPUT 1
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;"
+11/06/2023 19:55:20 Closing data reader to '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 A data reader for '"Users"' on server '"(localdb)\mssqllocaldb"' is being disposed after spending 10ms reading results.
+11/06/2023 19:55:20 Committing transaction.
+11/06/2023 19:55:20 Committed transaction.
+11/06/2023 19:55:20 Closing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Closed connection to database '"Users"' on server '"(localdb)\mssqllocaldb"' (0ms).
+11/06/2023 19:55:20 Disposing transaction.
+11/06/2023 19:55:20 An entity of type '"IdentityUserRole"' tracked by '"UsersDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+11/06/2023 19:55:20 An entity of type '"IdentityUser"' tracked by '"UsersDbContext"' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+11/06/2023 19:55:20 SaveChanges completed for '"UsersDbContext"' with 2 entities written to the database.
+11/06/2023 19:55:20 Executed action method "P7CreateRestApi.Controllers.SetupController.AddUserToRole (P7CreateRestApi)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 325.1204ms.
+11/06/2023 19:55:20 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+11/06/2023 19:55:20 No information found on request to perform content negotiation.
+11/06/2023 19:55:20 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+11/06/2023 19:55:20 Attempting to select the first formatter in the output formatters list which can write the result.
+11/06/2023 19:55:20 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+11/06/2023 19:55:20 Executing "OkObjectResult", writing value of type '"<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+11/06/2023 19:55:20 Executed action "P7CreateRestApi.Controllers.SetupController.AddUserToRole (P7CreateRestApi)" in 355.6168ms
+11/06/2023 19:55:20 Executed endpoint '"P7CreateRestApi.Controllers.SetupController.AddUserToRole (P7CreateRestApi)"'
+11/06/2023 19:55:20 HTTP "POST" "/api/Setup/AddUserToRole" responded 200 in 360.7848 ms
+11/06/2023 19:55:20 '"UsersDbContext"' disposed.
+11/06/2023 19:55:20 Disposing connection to database '"Users"' on server '"(localdb)\mssqllocaldb"'.
+11/06/2023 19:55:20 Disposed connection to database '""' on server '""' (0ms).
+11/06/2023 19:55:20 Request finished HTTP/2 POST https://localhost:7210/api/Setup/AddUserToRole?email=Admin%40example.com&roleName=Prout - 0 - 200 - application/json;+charset=utf-8 391.5778ms
+11/06/2023 19:55:59 Request starting HTTP/2 GET https://localhost:7210/api/Setup/GetUserRoles?email=Admin%40example.com - -
+11/06/2023 19:55:59 1 candidate(s) found for the request path '"/api/Setup/GetUserRoles"'
+11/06/2023 19:55:59 Endpoint '"P7CreateRestApi.Controllers.SetupController.GetUserRoles (P7CreateRestApi)"' with route pattern '"api/Setup/GetUserRoles"' is valid for the request path '"/api/Setup/GetUserRoles"'
+11/06/2023 19:55:59 Request matched endpoint '"P7CreateRestApi.Controllers.SetupController.GetUserRoles (P7CreateRestApi)"'
+11/06/2023 19:55:59 Static files was skipped as the request already matched an endpoint.
+11/06/2023 19:55:59 AuthenticationScheme: "Bearer" was not authenticated.
+11/06/2023 19:55:59 Executing endpoint '"P7CreateRestApi.Controllers.SetupController.GetUserRoles (P7CreateRestApi)"'

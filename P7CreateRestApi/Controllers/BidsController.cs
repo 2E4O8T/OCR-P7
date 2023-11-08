@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using P7CreateRestApi.Domain;
 using P7CreateRestApi.Repositories;
 
@@ -16,8 +17,11 @@ namespace P7CreateRestApi.Controllers
         }
 
         // GET: api/Bids
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Bid>>> GetBids()
+        [Authorize(Roles = "Admin, Creator, Updator, SimpleUser")]
+        [HttpGet("Get All Bids")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+                public async Task<ActionResult<IEnumerable<Bid>>> GetBids()
         {
             var bids = await _bidRepository.GetAllBids();
             if (bids == null)
@@ -28,7 +32,10 @@ namespace P7CreateRestApi.Controllers
         }
 
         // GET: api/Bids/5
+        [Authorize(Roles = "Admin, Creator, Updator, SimpleUser")]
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Bid>> GetBid(int id)
         {
             var bid = await _bidRepository.GetBidByIdAsync(id);
@@ -43,7 +50,10 @@ namespace P7CreateRestApi.Controllers
 
         // PUT: api/Bids/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize(Roles = "Admin, Updator")]
         [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> PutBid(int id, Bid bid)
         {
             if (id != bid.BidId)
@@ -58,7 +68,10 @@ namespace P7CreateRestApi.Controllers
 
         // POST: api/Bids
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize(Roles = "Admin, Creator")]
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Bid>> PostBid(Bid bid)
         {
             if (bid == null)
@@ -72,7 +85,10 @@ namespace P7CreateRestApi.Controllers
         }
 
         // DELETE: api/Bids/5
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> DeleteBid(int id)
         {
             var result = await _bidRepository.DeleteBidAsync(id);

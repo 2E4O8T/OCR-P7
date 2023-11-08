@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using P7CreateRestApi.Data;
 using P7CreateRestApi.Repositories;
-using P7CreateRestApi.Services;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using Serilog;
-using Microsoft.AspNetCore.Mvc.Formatters;
+using P7CreateRestApi.Configuration;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,26 +24,7 @@ Log.Information("Application Starting Up");
 
 builder.Host.UseSerilog();
 
-//try
-//{
-//    var configSerilog = new ConfigurationBuilder()
-//        .AddJsonFile("appsettings.json")
-//        .Build();
-//    Log.Logger = new LoggerConfiguration()
-//        .ReadFrom.Configuration(configSerilog)
-//        .CreateLogger();
-
-//    Log.Information("Application Starting Up");
-
-//    builder.Host.UseSerilog();
-//}
-//catch (Exception ex)
-//{
-//    Console.WriteLine($"Error configuring Sreilog: {ex}");
-//    throw;
-//}
-
-ConfigurationManager configuration = builder.Configuration;
+builder.Services.AddLogging();
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -62,7 +43,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     options.Password.RequireLowercase = true;
     options.Password.RequireNonAlphanumeric = true;
     options.Password.RequireUppercase = true;
-    options.Password.RequiredLength = 6;
+    options.Password.RequiredLength = 12;
     options.Password.RequiredUniqueChars = 1;
 
     // Lockout settings.
@@ -76,42 +57,46 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     options.User.RequireUniqueEmail = false;
 })  .AddEntityFrameworkStores<UsersDbContext>()
     .AddDefaultTokenProviders();
+
+// En suspens !
+// ML
+builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection(key: "JwtConfig"));
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;  //ML
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(options => 
+})
+.AddJwtBearer(jwt =>
 {
-    options.TokenValidationParameters = new TokenValidationParameters()
-    {
-        ValidateActor = true,
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        RequireExpirationTime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration.GetSection("Jwt:Issuer").Value,
-        ValidAudience = builder.Configuration.GetSection("Jwt:Audience").Value,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
-            builder.Configuration.GetSection("Jwt:Key").Value))
-    };
-}
-);
+    var key = Encoding.ASCII.GetBytes(builder.Configuration.GetSection(key: "JwtConfig:Secret").Value);
 
+    jwt.SaveToken = true;
+    jwt.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,  // For Dev
+        ValidateAudience = false,  // For Dev
+        RequireExpirationTime = false,  // For Dev
+        ValidateLifetime = true
+    };
+});
+
+// En suspens !
 // Service Interfaces
-builder.Services.AddTransient<IUsersService, UsersService>();
+//builder.Services.AddTransient<IUsersService, UsersService>();
 builder.Services.AddScoped<IBidRepository, BidRepository>();
 builder.Services.AddScoped <ICurvePointRepository, CurvePointRepository>();
 builder.Services.AddScoped <IRatingRepository, RatingRepository>();
 builder.Services.AddScoped<IRuleNameRepository, RuleNameRepository>();
 builder.Services.AddScoped<ITradeRepository, TradeRepository>();
 
-
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-// Modification pour tester Jwt depuis Swagger
-// builder.Services.AddSwaggerGen();
+
 builder.Services.AddSwaggerGen(option =>
 {
     //option.SwaggerDoc("V1", new OpenApiInfo { Title = "Auth API", Version = "v1" });
@@ -141,9 +126,6 @@ builder.Services.AddSwaggerGen(option =>
         });
 });
 
-
-builder.Services.AddDbContext<PostTradesDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

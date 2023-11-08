@@ -1,0 +1,12 @@
+11/06/2023 19:57:39 Request starting HTTP/2 POST https://localhost:7210/api/UsersTests/Administrator - 0
+11/06/2023 19:57:39 1 candidate(s) found for the request path '"/api/UsersTests/Administrator"'
+11/06/2023 19:57:39 Endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi)"' with route pattern '"api/UsersTests/Administrator"' is valid for the request path '"/api/UsersTests/Administrator"'
+11/06/2023 19:57:39 Request matched endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAdmin (P7CreateRestApi)"'
+11/06/2023 19:57:39 Static files was skipped as the request already matched an endpoint.
+11/06/2023 19:57:39 Successfully validated the token.
+11/06/2023 19:57:39 AuthenticationScheme: "Bearer" was successfully authenticated.
+11/06/2023 19:57:39 Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Prout)"
+11/06/2023 19:57:39 AuthenticationScheme: "Bearer" was forbidden.
+11/06/2023 19:57:39 HTTP "POST" "/api/UsersTests/Administrator" responded 403 in 86.7085 ms
+11/06/2023 19:57:39 Request finished HTTP/2 POST https://localhost:7210/api/UsersTests/Administrator - 0 - 403 0 - 120.6328ms

@@ -1,0 +1,38 @@
+11/06/2023 16:50:14 Request starting HTTP/2 POST https://localhost:7210/api/UsersTests/Nobody - 0
+11/06/2023 16:50:14 1 candidate(s) found for the request path '"/api/UsersTests/Nobody"'
+11/06/2023 16:50:14 Endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)"' with route pattern '"api/UsersTests/Nobody"' is valid for the request path '"/api/UsersTests/Nobody"'
+11/06/2023 16:50:14 Request matched endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)"'
+11/06/2023 16:50:14 Static files was skipped as the request already matched an endpoint.
+11/06/2023 16:50:14 Successfully validated the token.
+11/06/2023 16:50:14 AuthenticationScheme: "Bearer" was successfully authenticated.
+11/06/2023 16:50:14 Executing endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)"'
+11/06/2023 16:50:14 Route matched with "{action = \"GetAllUsers\", controller = \"UsersTests\"}". Executing controller action with signature "System.String GetAllUsers()" on controller "P7CreateRestApi.Controllers.UsersTestsController" ("P7CreateRestApi").
+11/06/2023 16:50:14 Execution plan of "authorization" filters (in the following order): ["None"]
+11/06/2023 16:50:14 Execution plan of "resource" filters (in the following order): ["None"]
+11/06/2023 16:50:14 Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+11/06/2023 16:50:14 Execution plan of "exception" filters (in the following order): ["None"]
+11/06/2023 16:50:14 Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+11/06/2023 16:50:14 Executing controller factory for controller "P7CreateRestApi.Controllers.UsersTestsController" ("P7CreateRestApi")
+11/06/2023 16:50:14 Executed controller factory for controller "P7CreateRestApi.Controllers.UsersTestsController" ("P7CreateRestApi")
+11/06/2023 16:50:14 Executing action method "P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)" - Validation state: Valid
+11/06/2023 16:50:14 Executed action method "P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.2245ms.
+11/06/2023 16:50:14 List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+11/06/2023 16:50:14 Attempting to select an output formatter based on Accept header '["text/plain"]'.
+11/06/2023 16:50:14 Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+11/06/2023 16:50:14 Executing "ObjectResult", writing value of type '"System.String"'.
+11/06/2023 16:50:14 Executed action "P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)" in 12.843ms
+11/06/2023 16:50:14 Executed endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetAllUsers (P7CreateRestApi)"'
+11/06/2023 16:50:14 HTTP "POST" "/api/UsersTests/Nobody" responded 200 in 15.1127 ms
+11/06/2023 16:50:14 Request finished HTTP/2 POST https://localhost:7210/api/UsersTests/Nobody - 0 - 200 - text/plain;+charset=utf-8 49.0959ms
+11/06/2023 16:50:32 Request starting HTTP/2 POST https://localhost:7210/api/UsersTests/SimpleUser - 0
+11/06/2023 16:50:32 1 candidate(s) found for the request path '"/api/UsersTests/SimpleUser"'
+11/06/2023 16:50:32 Endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetUser (P7CreateRestApi)"' with route pattern '"api/UsersTests/SimpleUser"' is valid for the request path '"/api/UsersTests/SimpleUser"'
+11/06/2023 16:50:32 Request matched endpoint '"P7CreateRestApi.Controllers.UsersTestsController.GetUser (P7CreateRestApi)"'
+11/06/2023 16:50:32 Static files was skipped as the request already matched an endpoint.
+11/06/2023 16:50:32 Successfully validated the token.
+11/06/2023 16:50:32 AuthenticationScheme: "Bearer" was successfully authenticated.
+11/06/2023 16:50:32 Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|SimpleUser)"
+11/06/2023 16:50:32 AuthenticationScheme: "Bearer" was forbidden.
+11/06/2023 16:50:32 HTTP "POST" "/api/UsersTests/SimpleUser" responded 403 in 0.5451 ms
+11/06/2023 16:50:32 Request finished HTTP/2 POST https://localhost:7210/api/UsersTests/SimpleUser - 0 - 403 0 - 0.9615ms
